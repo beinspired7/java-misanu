@@ -1,0 +1,30 @@
+package LinearStructures;
+
+import java.util.Scanner;
+
+//Write a program that asks for the user to input their name and age (using the Scanner class) and prints it to the console.
+
+public class ReadingValues {
+
+	public static void main(String[] args) {
+
+		// Declaration of strings
+
+		String name; // string declaration
+		String expression = "Andrija"; // string initialization
+
+		// Reading (and storing) input values from the console.
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("What is your name?");
+		name = sc.nextLine();
+		System.out.println("Your name is: " + name);
+
+		System.out.println("How old are you?");
+		int age = sc.nextInt();
+		System.out.println("You are " + age + " years old.");
+		sc.close();
+	}
+
+}

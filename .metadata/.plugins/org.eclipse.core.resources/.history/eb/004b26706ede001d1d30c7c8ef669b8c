@@ -1,0 +1,22 @@
+package LinearPrograming;
+
+import java.util.Scanner;
+
+//Write a program that calculates the surface area and volume of a sphere based on the entered radius
+public class Sphere {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the value of the radius: ");
+		double r = input.nextDouble();
+		double surfaceArea = Math.pow(r, 2) * Math.PI * 4;
+		double volume = Math.pow(r, 3) * Math.PI * 4.0 / 3;
+		System.out.println("The surface area of the sphere is: " + surfaceArea);
+		System.out.println("The volume of the sphere is: " + volume);
+
+		
+		    input.close();
+	}
+
+}

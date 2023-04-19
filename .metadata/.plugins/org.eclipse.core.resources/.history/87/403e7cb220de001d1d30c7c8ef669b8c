@@ -1,0 +1,9 @@
+package LinearPrograming;
+
+public class CartesianCoordinates {
+
+	public static void main(String[] args) {
+
+	}
+
+}

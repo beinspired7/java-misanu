@@ -1,0 +1,42 @@
+package LinearPrograming;
+
+import java.io.InputStreamReader;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+//Write a program using the BufferedReader class that prompts the user to enter a desired digit, which will then be displayed on the screen after input."
+
+public class BufferedReader {
+
+	public BufferedReader(InputStreamReader inputStreamReader) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public BufferedReader() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) throws Exception{
+
+		// f - intensity of the force
+		// alpha - angle between force F and coordinate axis
+		// x, y - Cartesian coordinates
+			double f, alpha, x, y;
+			DecimalFormat df = new DecimalFormat("#.##");
+		// Input data
+			Scanner ulaz = new Scanner(System.in);
+			System.out.print("Enter the value for the intensity of the force F (kN): ");
+			f = ulaz.nextDouble();
+			System.out.print("Enter the value for the angle alpha in degrees: ");
+			alpha = ulaz.nextDouble();
+
+		// Calculation of the value of Cartesian coordinates
+			x = f * Math.cos(alpha);
+			y = f * Math.sin(alpha);
+		// Printing the result
+			System.out.println("The values of Cartesian coordinates are: X=" + df.format(x) + "\tY=" + df.format(y));
+			
+		    }
+	}
+
+

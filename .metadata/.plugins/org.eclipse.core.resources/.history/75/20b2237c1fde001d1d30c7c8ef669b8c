@@ -1,0 +1,12 @@
+package LinearnoProgramiranje;
+
+public class JavaProgram {
+
+//Iskucati Java program koji će na ekranu (u konzoli) da ispiše ''Java je programski jezik''
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

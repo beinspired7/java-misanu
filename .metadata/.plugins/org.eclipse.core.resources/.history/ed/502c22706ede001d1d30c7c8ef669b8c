@@ -1,0 +1,20 @@
+package LinearPrograming;
+
+import java.util.Scanner;
+
+//Write a program using the Scanner class that asks the user to enter a name and an age (integer) and then displays the entered data on the screen
+public class Scenner {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Unesite ime: ");
+
+		String userName = scanner.nextLine();
+		System.out.println("Unesite broj godina: ");
+		int brojGodina = scanner.nextInt();
+		System.out.println("Ime: " + userName + "\n" + "Broj godina: " + brojGodina);
+
+	}
+
+}

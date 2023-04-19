@@ -1,0 +1,23 @@
+package LinearStructures;
+
+import java.util.Scanner;
+
+/*
+ * Write an algorithm and a program that calculates the value of the function shown in the picture based on the entered value of the variable x. 
+ * //Print the value of the function on the output.
+ */
+public class LinearStructure9 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter x: ");
+		double x = input.nextDouble();
+		double y = Math.sqrt((Math.exp(x / 2) + 1.2 * Math.sin(2 * x)) / (3.3 * Math.cos(x) + 7.1 * Math.exp(x)));
+
+		System.out.println("y is " + y);
+
+		input.close();
+		
+	}
+
+}

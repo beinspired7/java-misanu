@@ -1,0 +1,27 @@
+package LinearStructures;
+
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+/*
+ * Create an algorithm and write a program that calculates the value of the function shown in the image based on the entered value of the variable x.
+ * // Print the value of the function on the output.
+ */
+public class LineStructure4 {
+
+	public static void main(String[] args) {
+
+		// Declare variables
+		double x;
+		boolean y;
+		Scanner input = new Scanner(System.in);
+		// Enter the value of x
+		System.out.print("Enter the value of x: ");
+		x = input.nextDouble();
+		// Calculate the value of the function y
+		y = Math.sqrt((2 + x - Math.pow(x, 3)) / (x + 2)) > 0 || Math.exp(x) < x - 1 && Math.sqrt(x - 1) <= 0;
+		// Print the value of the function
+		System.out.println("The value of the function y is " + y);
+	}
+
+}

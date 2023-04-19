@@ -1,0 +1,24 @@
+package LinearnoProgramiranje;
+
+//Initialize all integer and double variables with their maximum values and print them to the screen.
+
+public class MIN_VALUE {
+
+	public static void main(String[] args) {
+
+		Byte b = 127;
+		short s = 32767;
+		int i = 2147483647;
+		long l = 9223_3720_3685_4775_807L; // Initialize ends  'L'
+		float f = 3.4028235E38F; // Initialize ends F'
+		double d = 1.7976931348623157E308D; // Initialize ends'D'
+
+		System.out.println("Najveća vrednost tipa BYTE je : " + b);
+		System.out.println("Najveća vrednost tipa SHORT je : " + s);
+		System.out.println("Najveća vrednost tipa INT je : " + i);
+		System.out.println("Najveća vrednost tipa LONG je : " + l);
+		System.out.println("Najveća vrednost tipa FLOAT je : " + f);
+		System.out.println("Najveća vrednost tipa DOUBLE je : " + d);
+	}
+
+}

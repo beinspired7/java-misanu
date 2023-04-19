@@ -1,0 +1,49 @@
+package LinearPrograming;
+
+import java.io.InputStreamReader;
+import java.text.DecimalFormat;
+
+/*
+ * A steel rod with a square cross-sectional area of side A = 1cm1, length L + 30cm, and elastic modulus E + 2 * 104kN / cm2 elongates by Δ = 3.2 - 10 -2cm under the action of an axial force F, while a contraction Δa = 3 * 10-4cm2 occurs in the cross-sectional area. Write an algorithm and a program to determine the intensity of the axial force F and Poisson's coefficient u.
+
+
+ */
+public class SteelRod {
+
+	public static void main(String[] args) {
+
+		// A – cross-sectional area of the rod
+		// L - length of the rod
+		// E - elastic modulus of the material
+		// deltaL - elongation of the rod
+		// deltaA - contraction
+		// F - intensity of axial force
+		// mi - Poisson's coefficient
+		double A, L, E, deltaL, deltaA, F, mi;
+		DecimalFormat df = new DecimalFormat("#.##");
+		BufferedReader ulaz = new BufferedReader(new InputStreamReader(System.in));
+
+			// Inputting data
+			System.out.print("Enter the value of the cross-sectional area of the rod A: ");
+			A = Double.parseDouble(ulaz.readLine());
+			System.out.print("Enter the value of the length of the rod L (cm): ");
+			L = Double.parseDouble(ulaz.readLine());
+			System.out.print("Enter the value of the elastic modulus E: ");
+			E = Double.parseDouble(ulaz.readLine());
+			System.out.print("Enter the value of the elongation of the rod (cm): ");
+			deltaL = Double.parseDouble(ulaz.readLine());
+			System.out.print("Enter the value of the contraction (cm): ");
+			deltaA = Double.parseDouble(ulaz.readLine());
+			
+			// Calculation of the intensity of the axial force and Poisson's coefficient
+			F = A * E * deltaL / L;
+			mi = L * deltaA / (A * deltaL);
+			
+			// Printing results
+			System.out.println("The intensity of the axial force is F = " + df.format(F)
+					+ "kN\nThe value of Poisson's coefficient is " + df.format(mi));
+		}
+		
+	}
+
+}

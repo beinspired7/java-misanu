@@ -1,0 +1,28 @@
+package LinearPrograming;
+
+import java.util.Scanner;
+
+/*
+ * Write a program that performs the swap of two numbers using a temporary variable.
+}
+}
+ */
+public class Swap {
+
+	public static void main(String[] args) {
+
+		int x, y;
+		int temp; // temporary variable
+		System.out.println("Two numbers: x y ");
+		Scanner input = new Scanner(System.in);
+		x = input.nextInt();
+		y = input.nextInt();
+		System.out.println("Before swap \nx = " + x + "\ny = " + y);
+		temp = x; // temp - temporary variable
+		x = y; // x can receive a new value because it is a copy in temp
+		y = temp; // y receives the value from temp
+		System.out.println("After swap\nx = " + x + "\ny = " + y);
+		input.close();
+	}
+
+}

@@ -1,0 +1,12 @@
+package LinearPrograming;
+
+public class Comment {
+
+	//Napisati program za ilustraciju komentara i štampanje stringa „Java programski jezik”.
+
+	public static void main(String[] args) {
+	    // Prikazuje se string "Java programski jezik"
+		 System.out.println("Java programski jezik");
+	}
+
+}
