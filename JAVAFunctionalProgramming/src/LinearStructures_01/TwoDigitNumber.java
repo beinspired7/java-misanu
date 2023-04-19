@@ -1,0 +1,28 @@
+package LinearStructures_01;
+//@author Milica Jaric
+
+import java.util.Scanner;
+
+/*
+ * Write a program to extract digits of a two-digit number and print them in reverse order. 
+Solution description: When converting, the positional system property is used. 
+For a two-digit number, number = d * 101 + j * 100, where the remainder of the division of the
+ two-digit number by 10 (number % 10) gives the units digit, 
+ and the integer division by 10 (number / 10) of the two-digit number gives the tens digit.
+ */
+public class TwoDigitNumber {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digits of a two-digit number");
+		System.out.println("Two-digit number:");
+		int a = input.nextInt();
+		int d, j;
+		d = a / 10;
+		j = a % 10;
+		System.out.println("number = " + a + " " + "units digit = " + j + " " + "tens digit = " + d);
+		input.close();
+	}
+
+}

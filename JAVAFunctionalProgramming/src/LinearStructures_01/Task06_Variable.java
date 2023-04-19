@@ -1,0 +1,17 @@
+package LinearStructures_01;
+//@author Milica Jaric
+
+public class Task06_Variable {
+
+	/*
+	 * Write a code that represents assigning one value to multiple variables.
+	 * 
+	 */
+	public static void main(String[] args) {
+
+		int x, y, z;
+		x = y = z = 150;
+		System.out.println(x + y + z);
+	}
+
+}

@@ -1,0 +1,24 @@
+package LinearStructures_01;
+
+import java.util.Scanner;
+
+//Write a program in which a two-digit number is entered and the difference between the digits of the tens and units is calculated.
+
+public class DifferenceOfDigits {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a two-digit number: ");
+		int a = input.nextInt();
+		System.out.println("Two-digit number: " + a);
+		int d, j, r;
+		d = a / 10;
+		j = a % 10;
+		r = d - j;
+		System.out.println("The difference between the digits is: " + r);
+
+		input.close();
+	}
+
+}

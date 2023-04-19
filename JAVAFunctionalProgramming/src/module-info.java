@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author milica
+ * @author Milica Jaric
  *
  */
 module LinearlnoProgramiranje {

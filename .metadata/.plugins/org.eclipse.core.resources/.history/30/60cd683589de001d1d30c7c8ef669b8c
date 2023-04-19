@@ -1,0 +1,50 @@
+package LinearStructures_01;
+
+//Declare variables a and b and assign them the values 5 and 50. 
+//Write code that will add, subtract, multiply, and divide (and modulo division) variables a and b, and print the results on the screen.
+public class Operators {
+
+	public static void main(String[] args) {
+
+		// Operators
+		// Binary operators
+		// 5 + 10
+
+		// =
+
+		// = assignment operator
+		// the value on the right side
+		// of the = sign is assigned to the variable
+		// on the left side of the = sign
+
+		int a = 5; // associativity is from right to left
+		int b = 50;
+
+		int sum = a + b;
+		System.out.println("The value of the sum variable is: " + sum);
+
+		// + is a binary operator
+		// -, *, /, %
+
+		int difference = a - b;
+		System.out.println("Difference = " + difference);
+
+		int product = a * b;
+		System.out.println("Product = " + product);
+
+		// The / operator performs integer division
+		float quotient = 13 / 3;
+		System.out.println("Quotient = " + quotient);
+
+		// Modulo division operator %
+		int remainder = 17 % 3;
+		System.out.println("Remainder = " + remainder);
+
+		float exactQuotient = 17f / 3f;
+		System.out.println("Exact quotient: " + exactQuotient);
+
+		double check = (double) 50 / 3;
+		System.out.println("Check = " + check);
+	}
+
+}
