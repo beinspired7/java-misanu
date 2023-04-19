@@ -19,3 +19,5 @@
 1681892060684	Rename type 'Variable'
 1681892097110	Rename type 'IntegerVariables'
 1681892637880	Move compilation unit
+1681903789663	Rename package 'BranchingStructure_05'
+1681903811281	Rename package 'ConditionalStructure_04'
