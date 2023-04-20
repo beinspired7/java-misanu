@@ -1,4 +1,4 @@
-package JavaSerializationDeserialization;
+package SerializationDeserialization;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

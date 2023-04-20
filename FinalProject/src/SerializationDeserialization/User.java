@@ -1,4 +1,4 @@
-package JavaSerializationDeserialization;
+package SerializationDeserialization;
 
 import java.io.Serializable;
 
