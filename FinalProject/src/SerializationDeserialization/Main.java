@@ -7,7 +7,8 @@ import java.io.ObjectOutputStream;
 
 public class Main {
 	/*
-	 * Steps to Serilize 1.Your objeck class should implement Serializable interface
+	 * Steps to Serilize
+	 *  1.Your objeck class should implement Serializable interface
 	 * 2.Add import java.io.Serializable; 
 	 * 3.FileOutputStream fileOut = new  FileOutputStream(file path) 
 	 * 4.ObjectOutputStream out = new  ObjectOutputStream(fileOut) 
