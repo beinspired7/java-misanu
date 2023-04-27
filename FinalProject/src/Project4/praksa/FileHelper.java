@@ -1,4 +1,4 @@
-package praksa;
+package Project4.praksa;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,7 +11,7 @@ public class FileHelper {
 
 	public static String loadMetaData() {
 		StringBuffer characterData = new StringBuffer();
-		File file = new File("resource/got_meta_data.txt");
+		File file = new File("resource/project4/got_meta_data.txt");
 
 		try {
 			BufferedReader buffer = new BufferedReader(new FileReader(file));
@@ -29,7 +29,7 @@ public class FileHelper {
 
 	public static List<String> loadMessages(String fileName) {
 		List<String> messages = new ArrayList<String>();
-		File file = new File("resource/message_logs/" + fileName);
+		File file = new File("resource/project4/message_logs/" + fileName);
 
 		try {
 			BufferedReader buffer = new BufferedReader(new FileReader(file));

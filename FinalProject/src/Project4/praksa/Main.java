@@ -1,7 +1,7 @@
-package praksa;
+package Project4.praksa;
 
-import character.Character;
-import character.Loader;
+import Project4.character.Character;
+import Project4.character.Loader;
 
 import java.util.List;
 

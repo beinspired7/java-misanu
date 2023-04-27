@@ -1,6 +1,6 @@
-package message;
+package Project4.message;
 
-import character.Character;
+import Project4.character.Character;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,8 +8,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
-public class Loader extends contract.Loader<Message> {
+public class Loader extends Project4.contract.Loader<Message> {
     private Loader() {}
     private static Loader instance = null;
     public static Loader getInstance() {
@@ -24,7 +25,7 @@ public class Loader extends contract.Loader<Message> {
             return items;
         }
 
-        character.Loader cl = character.Loader.getInstance();
+        Project4.character.Loader cl = Project4.character.Loader.getInstance();
         List<Character> characters = cl.load();
 
         items = characters.stream().map(recipient -> {
@@ -46,11 +47,11 @@ public class Loader extends contract.Loader<Message> {
                 }
 
                 return new Message(senderCharacter, recipient, matcher.group(2));
-            }).toList();
+            }).collect(Collectors.toList());
         }).reduce(new ArrayList<>(), (cumulate, list) -> {
             cumulate.addAll(list);
             return cumulate;
-        }).stream().filter(Objects::nonNull).toList();
+        }).stream().filter(Objects::nonNull).collect(Collectors.toList());
 
         return items;
     }

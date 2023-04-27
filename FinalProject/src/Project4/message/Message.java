@@ -1,6 +1,6 @@
-package message;
+package Project4.message;
 
-import character.Character;
+import Project4.character.Character;
 
 public class Message {
     Character sender;

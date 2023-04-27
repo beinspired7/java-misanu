@@ -1,7 +1,7 @@
-package character;
+package Project4.character;
 
-import message.Message;
-import praksa.FileHelper;
+import Project4.message.Message;
+import Project4.praksa.FileHelper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -41,7 +41,7 @@ public class Character {
     }
 
     public List<Message> getSentMessages() {
-        return message.Loader.getInstance().load().stream().filter(message -> message.getSender().equals(this)).toList();
+        return Project4.message.Loader.getInstance().load().stream().filter(message -> message.getSender().equals(this)).collect(Collectors.toList());
     }
 
     private int getEmoticonScore(String[] emoticons) {

@@ -1,11 +1,12 @@
-package character;
+package Project4.character;
 
-import praksa.FileHelper;
+import Project4.praksa.FileHelper;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class Loader extends contract.Loader<Character> {
+public class Loader extends Project4.contract.Loader<Character> {
     private Loader() {}
     private static Loader instance = null;
     public static Loader getInstance() {
@@ -25,7 +26,7 @@ public class Loader extends contract.Loader<Character> {
         metas = metas.subList(1, metas.size());
 
 
-        items = metas.stream().map(meta -> new Character(meta.trim().split(", "))).toList();
+        items = metas.stream().map(meta -> new Character(meta.trim().split(", "))).collect(Collectors.toList());
 
         return items;
     }
