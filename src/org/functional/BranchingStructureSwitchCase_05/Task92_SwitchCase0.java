@@ -1,0 +1,45 @@
+package org.functional.BranchingStructureSwitchCase_05;
+
+import java.util.Scanner;
+
+//@author Milica Jaric
+
+public class Task92_SwitchCase0 {
+	/*
+	 * Write a case statement that, based on numerical grades 5, 4, 3, 2, 1, prints
+	 * descriptive grades "excellent", "very good", "good", "sufficient",
+	 * "insufficient".
+	 */
+	public static void main(String[] args) {
+
+		int grade;
+
+		// Input
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter a grade: ");
+		grade = sc.nextInt();
+		sc.close();
+
+		// Processing
+		switch (grade) {
+		case 5:
+			System.out.println("Excellent.");
+			break;
+		case 4:
+			System.out.println("Very good.");
+			break;
+		case 3:
+			System.out.println("Good.");
+			break;
+		case 2:
+			System.out.println("Sufficient.");
+			break;
+		case 1:
+			System.out.println("Insufficient");
+			break;
+		default:
+			System.out.println("Incorrect input.");
+		}
+	}
+}
